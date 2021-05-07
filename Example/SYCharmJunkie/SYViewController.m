@@ -7,6 +7,7 @@
 //
 
 #import "SYViewController.h"
+#import "SYTest.h"
 
 @interface SYViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [[[SYTest alloc] init] testPrint:@"hello"];
 }
 
 - (void)didReceiveMemoryWarning
